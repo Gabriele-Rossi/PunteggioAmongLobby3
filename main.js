@@ -51,7 +51,7 @@ function calcolaPunteggio() {
     Object.entries(punteggiGiocatori).forEach(([player, score]) => {
         // Formatta il nome del giocatore in grassetto e oro
         const formattedPlayerName = `<strong style="color: black;">${player}</strong>`;
-        resultContainer.innerHTML += `<p>${formattedPlayerName}: ${score}</p>`;
+        resultContainer.innerHTML += `<p>${formattedPlayerName}: ${score},</p>`;
     });
 }
 
@@ -73,6 +73,7 @@ function getPunteggioTag(tag) {
         'RCNT': 0.5,
         'PENALITY': -3,
         'CAMPER': -2,
+        'BC': -1,
     };
 
     // Restituisci il punteggio corrispondente al tag o 0 se il tag non è valido
