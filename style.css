@@ -211,7 +211,7 @@ input{
 
 .form-group {
   transition: border-color 0.7s ease;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
   margin-top: 20px;
 }
 
